@@ -10,6 +10,7 @@ export default class NewGrowl extends Component{
 
   componentDidMount(){
     console.log('hey!!!');
+    console.log(process.env)
     document.getElementById('growlTextArea').focus();
     document.getElementById('growlTextArea').select();
     document.getElementById('growlLength').style.color = "green";

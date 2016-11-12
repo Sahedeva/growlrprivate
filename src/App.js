@@ -30,6 +30,7 @@ componentDidMount(){
         // User is signed in.
       } else {
         this.setState({user: {} })
+        console.log('testing');
         document.getElementById("title").classList.remove("loginTitle");
         document.getElementById("title").classList.add("logoutTitle");
         document.getElementById("headImg").classList.remove("loginImg");
