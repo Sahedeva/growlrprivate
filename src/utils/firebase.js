@@ -6,10 +6,10 @@ const env = runtimeEnv();
 
 const config = {
     apiKey: env.REACT_APP_FBAPIKEY1,
-    authDomain: "growl-46ecf.firebaseapp.com",
-    databaseURL: "https://growl-46ecf.firebaseio.com",
-    storageBucket: "growl-46ecf.appspot.com",
-    messagingSenderId: "296409813010"
+    authDomain: env.REACT_APP_FBAUTHDOMAIN1,
+    databaseURL: env.REACT_APP_FBDATABASEURL1,
+    storageBucket: env.REACT_APP_FBSTORAGEBUCKET1,
+    messagingSenderId: env.REACT_APP_FBMESSAGINGSENDERID1
   };
 
 firebase.initializeApp(config);
