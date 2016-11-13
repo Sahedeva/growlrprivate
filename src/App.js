@@ -67,7 +67,7 @@ componentDidMount(){
   render() {
     return (
       <div className="App">
-        <div className="App-header container">
+        <div className="App-header">
           <div className="pull-left">
             <img id="headImg" src={this.state.user.photoURL} className="avatar" role="presentation"/>  {this.state.user.displayName}
             <span id="title">Growlrr</span>
@@ -76,7 +76,7 @@ componentDidMount(){
           {this._sessionButton()}
           {this._sessionForm()}
         </div>
-        <div className="App-body">
+        <div className="App-body container">
           <ul className="growlUl">
             {_.map(this.state.growls, (growl, id) =>
                 <Growl user={this.state.user} id={id} growl={growl} key={id} firebase={firebase} />
