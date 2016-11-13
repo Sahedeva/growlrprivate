@@ -77,7 +77,7 @@ componentDidMount(){
           {this._sessionForm()}
         </div>
         <div className="App-body">
-          <ul>
+          <ul className="growlUl">
           <hr/>
             {_.map(this.state.growls, (growl, id) =>
                 <Growl user={this.state.user} id={id} growl={growl} key={id} firebase={firebase} />
