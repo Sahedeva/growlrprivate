@@ -1,7 +1,11 @@
 import firebase from 'firebase';
+import runtimeEnv from '@mars/heroku-js-runtime-env';
+
+const env = runtimeEnv();
+console.log(env);
 
 const config = {
-    apiKey: "AIzaSyCJ9LFNjhqZC7862W_w4b-o4RVyTjNk7j8",
+    apiKey: env.FBAPIKEY1,
     authDomain: "growl-46ecf.firebaseapp.com",
     databaseURL: "https://growl-46ecf.firebaseio.com",
     storageBucket: "growl-46ecf.appspot.com",

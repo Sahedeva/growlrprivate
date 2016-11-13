@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import firebase from './utils/firebase';
 import LoginButton from './components/LoginButton';
@@ -7,7 +6,7 @@ import LogoutButton from './components/LogoutButton';
 import NewGrowl from './components/NewGrowl';
 import Growl from './components/Growl';
 import _ from 'lodash';
-import runtimeEnv from '@mars/heroku-js-runtime-env';
+
 
 class App extends Component {
 // constructor
@@ -67,8 +66,6 @@ componentDidMount(){
 
 // render fxn
   render() {
-    const env = runtimeEnv();
-    
     return (
       <div className="App">
         <div className="App-header">
@@ -81,7 +78,6 @@ componentDidMount(){
           {this._sessionForm()}
         </div>
         <div className="App-body">
-        <code>Runtime env var example: { env.REACT_APP_HELLO }</code>
           <ul>
             {_.map(this.state.growls, (growl, id) =>
                 <Growl user={this.state.user} id={id} growl={growl} key={id} firebase={firebase} />
