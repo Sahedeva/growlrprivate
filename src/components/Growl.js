@@ -32,7 +32,6 @@ class Growl extends Component {
     return(
     <div className="all-growls">
       <li className="list">
-      <hr/>
       <div className="container">
         <div className="row">
           <div className="col-xs-1 col-xs-offset-2">
@@ -60,8 +59,8 @@ class Growl extends Component {
           </div>
         </div>
       </div>
-      <hr/>
       </li>
+      <hr/>
     </div>
     )
   }
