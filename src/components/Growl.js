@@ -60,6 +60,7 @@ class Growl extends Component {
           </div>
         </div>
       </div>
+      <hr/>
       </li>
     </div>
     )
