@@ -6,7 +6,10 @@ import LogoutButton from './components/LogoutButton';
 import NewGrowl from './components/NewGrowl';
 import Growl from './components/Growl';
 import _ from 'lodash';
+import runtimeEnv from '@mars/heroku-js-runtime-env';
 
+const env = runtimeEnv();
+console.log(env);
 
 class App extends Component {
 // constructor
