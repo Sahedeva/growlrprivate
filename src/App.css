@@ -31,11 +31,12 @@ body{
 .all-growls{
   display: block;
   margin: 5px;
+  border: 1px solid;
 }
 
 .delete-link{
-  float: right;
-  padding-top: 40px;
+  position: absolute;
+  top: 20px;
 }
 
 .header{
@@ -56,10 +57,6 @@ body{
   margin-top: 34px;
 }
 
-hr {
-  margin: 0;
-}
-
 .NewTitle{
   display: inline-block;
 }
@@ -67,10 +64,6 @@ hr {
 .form-group{
   display: inline-block;
 }
-
-/*.NewGrowlButton{
-  padding-top: 20px;
-}*/
 
 .GrowlButton{
  padding: 15px 30px;
@@ -196,27 +189,3 @@ textarea {
 #growlLength {
   padding-right: 10px;
 }
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/

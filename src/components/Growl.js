@@ -32,7 +32,6 @@ class Growl extends Component {
     return(
     <div className="all-growls">
       <li className="list">
-      <div className="container">
         <div className="row">
           <div className="col-xs-1 col-xs-offset-2">
           <img src={this.props.growl.userAvatar} className="avatar" role="presentation"/>
@@ -58,9 +57,7 @@ class Growl extends Component {
             <span className="delete-link">{this._sessionDelete()}</span>
           </div>
         </div>
-      </div>
       </li>
-      <hr/>
     </div>
     )
   }
