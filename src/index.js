@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
+console.log('hey this is index.js');
+console.log(process.env);
+
 ReactDOM.render(
   <App />,
   document.getElementById('root')
