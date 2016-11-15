@@ -30,6 +30,7 @@ export default class NewGrowl extends Component{
       let growl = this.refs.growl.value;
       let created_at = Date.now();
       console.log('created_at:',created_at);
+      console.log(this.props.user);
       var growlObj = {
         growl,
         [this.props.user.uid]: true,

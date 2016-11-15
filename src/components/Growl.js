@@ -14,8 +14,7 @@ class Growl extends Component {
 }
   _sessionDelete() {
     let array = Object.keys(this.props.growl);
-    console.log(array);
-      if (this.props.user.uid === array[2]) {
+      if (array.indexOf(this.props.user.uid)>0) {
         return <a className="btn btn-danger" href='#' onClick={this._handleDelete}>Delete</a>
       } else {
         return
