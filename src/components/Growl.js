@@ -23,7 +23,6 @@ class Growl extends Component {
 
   _handleDelete(e) {
     e.preventDefault();
-    console.log("deleted");
     this.props.firebase.database().ref(`/growls/${this.props.id}`).remove();
 }
 
