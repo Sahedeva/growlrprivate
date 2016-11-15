@@ -154,6 +154,7 @@ body{
 
 pre {
   white-space: pre-wrap;
+  word-break: break-word;
   width:525px;
 }
 
