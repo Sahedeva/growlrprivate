@@ -8,9 +8,10 @@ export default class LoginButton extends Component{
 
   _handleClick(e){
     e.preventDefault();
-    let provider = new
-    this.props.firebase.auth.GoogleAuthProvider();
-    this.props.firebase.auth().signInWithPopup(provider)
+    let provider = new this.props.firebase.auth().signInWithEmailAndPassword(email, password);
+    // let provider = new
+    // this.props.firebase.auth.GoogleAuthProvider();
+    this.props.firebase.auth().signIn(provider)
   }
 
   render(){
